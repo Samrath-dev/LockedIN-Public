@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Mode",
+  "version": "1.0",
+  "description": "Dark mode enforcer + optional study session timer.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "scripting",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://localhost:8080/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "128": "icons/lockedin_128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches": [
+      "http://localhost:5173/*"],
+      "css": ["darkmode.css"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "128": "icons/lockedin_128.png"
+  }
+}

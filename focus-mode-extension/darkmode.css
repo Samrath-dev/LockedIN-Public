@@ -1,0 +1,88 @@
+/* Global base */
+html, body 
+{
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Generic tag cleanup */
+div, section, article, nav, main, header, footer 
+{
+    background-color: inherit !important;
+    color: inherit !important;
+    border: none !important;
+}
+
+/* Blackboard Ultra containers */
+ultra-app-layout,
+ultra-institution-page,
+ultra-navigation,
+ultra-base-theme 
+{
+    background-color: #1a1a1a !important;
+    color: #f1f1f1 !important;
+    border: none !important;
+}
+
+/* Common content containers */
+ultra-app-layout > div,
+ultra-navigation > nav,
+ultra-base-theme > * {
+    background-color: #181818 !important;
+    color: #f1f1f1 !important;
+}
+
+/* Buttons and tabs */
+button, .btn, [role="button"], [class*="button"] 
+{
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+}
+
+button:hover, .btn:hover {
+    background-color: #333 !important;
+}
+
+/* Input fields */
+input, select, textarea {
+    background-color: #1e1e1e !important;
+    color: #eaeaea !important;
+    border: 1px solid #444 !important;
+}
+
+/* Hyperlinks */
+a {
+    color: #4ea3ff !important;
+}
+
+/* Table */
+table, th, td {
+    background-color: #202020 !important;
+    color: #f0f0f0 !important;
+    border: 1px solid #444 !important;
+}
+
+/* Avoid harsh white borders */
+* {
+    border-color: #333 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Fix logo/icon issues */
+img, svg, [class*="icon"] {
+    filter: none !important;
+    background: none !important;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
